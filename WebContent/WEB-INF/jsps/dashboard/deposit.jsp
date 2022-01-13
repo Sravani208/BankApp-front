@@ -28,40 +28,35 @@
 			</div>
 			<div class="col-lg-1"></div>
 		</div>
+  <div class="card-body">
 		<div class="row">
 			<div class="col-lg-1"></div>
 			<div class="col-lg-10">
-				<div class="card border-primary mb-3">
-					<div class="card-header">Deposit</div>
-					<div class="card-body">
-						<h5 class="card-title">Enter Beneficiary Account Number to Deposit money</h5>
-						<p class="card-text">Maximum limit for deposit at a time is 2 lakhs.</p>
+	 <div class="card border-primary mb-3">
+  <div class="card-header">Deposit</div>
+  <sf:form method="get" action="${pageContext.request.contextPath }/process-deposit" modelAttribute="deposit"> 
+  <div class="card-body">
+    <h5 class="card-title">Enter Beneficiary Amount to Deposit</h5>
+    <p class="card-text">
+    The money will be credited instantly to your account</p>
+    
+    <div class="form-group">
+   <sf:input class="form-control form-control-lg" type="text" placeholder="amount" id="inputLarge" 
+   path="amount" />
+</div>
 
-						<div class="form-group">
-							 <input
-								class="form-control form-control-lg" type="text"
-								placeholder="Enter account number" id="inputLarge">
-						</div>
-						<hr/>
-						
-						<h5 class="card-title">Enter amount to Deposit </h5>
-						<p class="card-text">
-						The amount will be credited instantly to your account</p>
-
-						<div class="form-group">
-							 <input
-								class="form-control form-control-lg" type="text"
-								placeholder="amount" id="inputLarge">
-						</div>
-						<br/><br/>
-						
-						<button type="button" class="btn btn-primary btn-lg">Initiate Deposit</button>
-					</div>
-				</div>
-
-			</div>
+	
+	<br /><br />
+	<input type="submit" class="btn btn-primary btn-lg" value="submit" />
+	
+  </div>
+  
+  </sf:form>
+</div>
 			<div class="col-lg-1"></div>
 		</div>
-	</div>
+		</div>
+</div>
+	
 </body>
 </html>
