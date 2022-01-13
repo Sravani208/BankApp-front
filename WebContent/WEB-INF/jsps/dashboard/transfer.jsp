@@ -29,8 +29,6 @@
 		<div class="row">
 			<div class="col-lg-1"></div>
 			<div class="col-lg-10">
-			 
-			 
 			 <div class="card border-primary mb-3">
   <div class="card-header">Transfer</div>
   <div style="font-size:medium;  color: red" > <%=request.getAttribute("msg") %></div>
